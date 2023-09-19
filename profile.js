@@ -1,18 +1,10 @@
+import users from './userVars.js';
+console.log(users);
 
-
-const users = [
-    {
-        username: 'user1',
-        email: 'user1@example.com',
-        password: 'password1', // In a real application, passwords should be hashed
-        balance: 1000,
-        statements: ['Deposit $100', 'Withdraw $50']
-    }
-];
+/*USERS[] USED TO BE HERE*/ 
 
 // Event listener for registration form submission
 
-// JavaScript in script.js
 
 
 // Function to read a cookie by name
@@ -39,6 +31,7 @@ function displayUserInfo() {
         document.getElementById('username').textContent = `Username: ${username}`;
         document.getElementById('email').textContent = `Email: ${email}`;
         document.getElementById('balance').textContent = `Balance: $${balance.toFixed(2)}`;
+        alert('Found your INFO!!!')
     } else {
         // Handle the case when cookies are missing or have invalid data
         alert('Error: User data not found.');

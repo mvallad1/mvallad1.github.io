@@ -24,15 +24,7 @@ iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup');
 });
 
-/*const users = [
-    {
-        username: 'user1',
-        email: 'user1@example.com',
-        password: 'password1', // In a real application, passwords should be hashed
-        balance: 1000,
-        statements: ['Deposit $100', 'Withdraw $50']
-    }
-];*/
+/*THIS IS WERE USERS[] USED TO BE */ 
 
 // Function to handle registration
 function registerUser(username, email, password) {
@@ -78,13 +70,14 @@ function loginUser(username, password) {
     // Search for the user in the users array
     const user = users.find((user) => user.username === username && user.password === password);
 
-    document.cookie = `username=${user.username}; expires=Thu, 18 Dec 2043 12:00:00 UTC; path=/`;
-    document.cookie = `email=${user.email}; expires=Thu, 18 Dec 2043 12:00:00 UTC; path=/`;
-    document.cookie = `balance=${user.balance}; expires=Thu, 18 Dec 2043 12:00:00 UTC; path=/`;
-    alert('Cookie CREATED!');
     if (user) {
         // User found, show a login successful message (you can redirect or perform other actions here)
         alert('Login successful!');
+
+        alert('Cookie CREATED!');
+        document.cookie = `username=${user.username}; expires=Thu, 18 Dec 2043 12:00:00 UTC; path=/`;
+        document.cookie = `email=${user.email}; expires=Thu, 18 Dec 2043 12:00:00 UTC; path=/`;
+        document.cookie = `balance=${user.balance}; expires=Thu, 18 Dec 2043 12:00:00 UTC; path=/`;
 
         //Redirect
         window.location.href = 'profile.html';
