@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your CSS file -->
+</head>
+<body>
+    <header>
+        <h2 class="logo">Totally Real Bank</h2>
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <div class="dashboard-container"> <!-- Add a class for the dashboard container -->
+        <h1>Welcome, <span id="username">Username</span></h1>
+        <div class="balance">
+            <h2>Current Balance:</h2>
+            <p>$<span id="balance">0</span></p>
+        </div>
+        
+        <div class="statements">
+            <h2>Transaction Statements:</h2>
+            <ul id="statement-list">
+                <!-- JavaScript will populate this list -->
+            </ul>
+        </div>
+
+        <button id="logout-btn" class="btn">Logout</button>
+    </div>
+
+    <script src="dashboard.js"></script> <!-- Include your JavaScript file for the dashboard -->
+</body>
+</html>
