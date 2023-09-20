@@ -1,5 +1,5 @@
 import users from './userVars.js';
-console.log(users);
+/*console.log(users);*/
 
 /*USERS[] USED TO BE HERE*/ 
 

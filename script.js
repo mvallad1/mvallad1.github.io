@@ -1,5 +1,5 @@
 import users from './userVars.js';
-console.log(users);
+/*console.log(users);*/
 
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
