@@ -1,7 +1,7 @@
 const users = [
     {
         username: 'user1',
-        email: 'user1@example.com',
+        email: 'test.gitweb.user@outlook.com',
         password: 'password1', // Hash passwords in a real application
         balance: 1000,
         statements: ['Deposit $100', 'Withdraw $50']

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content = "width-device-width, inital-scale=1.0">
+
+    <title>Login & Registration</title>
+    <link rel="stylesheet" href="forgot.css">
+    
+</head>
+
+<body>
+
+    <header> 
+        <h2 class="logo">Totally Real Bank</h1>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+            <button class = "btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="forpass">
+        <h2>Forgot Password</h2>
+        <p>Enter your email to get your password:</p>
+        
+        <!-- Create a form for the "Forgot Password" feature -->
+        <form action = "#">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Get Password</button>
+        </form>
+    </div>
+
+    
+    
+    <script type="module" src="forgot.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--<script> 
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
