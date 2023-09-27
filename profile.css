@@ -270,7 +270,7 @@ header {
     position: relative;
     bottom: -45px;
     width: 1000px;
-    height: 440px;
+    height: 500px;
     background: transparent;
     border: 2px solid rgba(255,255,255,.5);
     border-radius: 20px;
@@ -332,5 +332,48 @@ header {
     
     
     text-decoration: overline underline; /* Add underline */
+    
+}
+
+.profile p3 {
+    position: fixed;
+    left: 255px;
+    top: 280px;
+    font-size: 4em;
+    color: #ffffff;
+    
+    
+    text-decoration: overline underline; /* Add underline */
+    
+}
+
+#new-email {
+    width: 100%; /* Adjust the width to leave space for the button */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    float: left; /* Float the input field to the left */
+    position: relative; /* Add this line */
+    top: 150px;
+}
+
+#change-email-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    float: left; /* Float the button to the left */
+    margin-left: 10px; 
+    position: relative; /* Add this line */ 
+    
+    
+}
+
+#new-email,
+#change-email-btn {
+    top: 325px;
     
 }
